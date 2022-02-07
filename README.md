@@ -13,7 +13,7 @@ this package. A summary of these fields include:
 
 * **pct_work_remote**: percent population that work from home (%)
 * **pct_use_pub_trans**: percent population that use public transportation (%)
-* **income_per_capta**: income per capita (USD)
+* **income_per_capita**: income per capita (USD)
 * **pct_work_remote**: percent population that work from home (%)
 * **pct_work_remote**: percent population that work from home (%)
 * **pct_labor_force**: percent population in labor force (%)

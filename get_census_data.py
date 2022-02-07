@@ -46,7 +46,7 @@ def postprocess_df(df):
     #the following fields are calculated from existing census APIs! 
     df["pct_work_remote"] = 100*df['B08301_021E']/df['B08301_001E'].replace(0,np.nan)            # work remotely (%)
     df["pct_use_pub_trans"] = 100*df['B08301_010E']/df['B08301_001E'].replace(0,np.nan)          # using public transportation (%)
-    df["income_per_capta"] = df['B19301_001E'].replace(0,np.nan)                                 # income per capita (USD)
+    df["income_per_capita"] = df['B19301_001E'].replace(0,np.nan)                                 # income per capita (USD)
     df["pct_labor_force"] = 100*df['B23025_002E']/df['B23025_001E'].replace(0,np.nan)            # labor force (%)
     #df["pct_unemployed"] = 100*df['B27011_008E']/df['B27011_001E'].replace(0,np.nan)            # unemployed (%) -- gives blank records!
     df["pct_unemployed"] = 100*df['B23025_005E']/df['B23025_002E'].replace(0,np.nan)             # unemployed (%)
