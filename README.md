@@ -36,7 +36,7 @@ this code. A summary of these fields include:
 ### Run Using the Windows Command Line
 use this method it you would like to get the data in your local drive in a CSV format.
 * `git clone https://github.com/bkasaeer/get-census-data`
-* `set CENSUS_KEY ENTER_YOUR_KEY_HERE`
+* `set CENSUS_KEY=ENTER_YOUR_KEY_HERE`
 * Example 1 (use default values, i.e. 2019 data for all US counties): `python get_census_data.py $CENSUS_KEY$`
 * Example 2: `python get_census_data.py %CENSUS_KEY% --state_name "Rhode Island" --geo_level "block group --year 2018"` 
 ### Run From a Development Environment
