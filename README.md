@@ -28,9 +28,11 @@ this code. A summary of these fields include:
 
 ## Prerequisites
 * You need to obtain an API key from [US Census website](https://api.census.gov/data/key_signup.html) 
+* `lxml`
 * `censusdata`
 * `numpy`
 * `pandas`
+
 
 ## Run
 ### Run Using the Windows Command Line
