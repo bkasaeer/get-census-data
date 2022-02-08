@@ -77,7 +77,7 @@ def postprocess_df(df):
     #df['pct_commute_over_90mins'] = 100*df['B08012_013E']/df['B08012_001E'].replace(
     #    0,np.nan) 
     #make sure income per capita is always positive! 
-    df.loc[df.income_per_capta < 0,'income_per_capta'] = np.nan
+    df.loc[df.income_per_capita < 0,'income_per_capita'] = np.nan
     return df
 
 def get_census_data(key, state_name = 'All', year = 2019, geo_level = 'county'):
@@ -122,6 +122,8 @@ def get_census_data(key, state_name = 'All', year = 2019, geo_level = 'county'):
             'B28002_003E','B28002_006E','B28002_007E',
             'B28002_010E','B19049_001E','B25010_001E',
             'B01001_001E'])                                              # internet access 
+    #create a data folder if not exist
+    os.makedirs('data', exist_ok=True)
     #flatten the list of lists
     names = list(itertools.chain(*names))
     #create a fips state table 
