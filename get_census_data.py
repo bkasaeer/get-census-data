@@ -6,6 +6,9 @@ import itertools
 import argparse
 import numpy as np 
 
+#create a data folder if not exist
+os.makedirs('data', exist_ok=True)
+
 def create_state_fips_dict():
     """this function creates the US state FIPS code dictionary! It stores the data as a CSV file within 
     the data folder upon the first call of the function. For every future run, it first attempts to 
@@ -122,8 +125,7 @@ def get_census_data(key, state_name = 'All', year = 2019, geo_level = 'county'):
             'B28002_003E','B28002_006E','B28002_007E',
             'B28002_010E','B19049_001E','B25010_001E',
             'B01001_001E'])                                              # internet access 
-    #create a data folder if not exist
-    os.makedirs('data', exist_ok=True)
+    
     #flatten the list of lists
     names = list(itertools.chain(*names))
     #create a fips state table 
